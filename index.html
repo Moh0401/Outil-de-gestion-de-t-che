@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="utf-8">
+    <title>Outil de gestion de Tâche</title>
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <!--Voici mon header-->
+    <header>
+        
+    </header>
+    <!--Voici mon main--> 
+    <main>
+        <!-- voici la premiere section-->
+        <section class="section_1">
+            <h1 aria-label="titre">Outil de gestion de <br><em>tâches</em></h1>
+            <form id="exm" method="POST" action="#" aria-label="Renseigné vos tâches">
+                <div class="taches" aria-label="titre de tache">
+                    <label for="tache">Tâche :</label>
+                    <input type="text" id="tache" placeholder="Votre tâche" name="tache">
+                </div> 
+                <div class="date_decheance" aria-label="date d'écheance de la tâche"> 
+                    <label for="date_echeance">Date d’écheance :</label>
+                    <input type="date" id="date_echeance" name="date_echeance">
+                </div aria-label="Priorité de la tache">
+                <div class="prioritaire">
+                    <label for="priorite">Priorité :</label>
+                    <input type="text" id="priorite" placeholder="N/5" name="priorite">
+                </div>
+               <button type="submit" aria-label="enregistrer" style="background-color: #BEB3B3;">Ajouter</button>
+            </form>
+            
+        </section>
+        <!--Voici la deuxième section-->
+        <section class="section_2">
+            <h2 aria-label="liste de tâches">Liste</h2>
+            <div class="sous_titre">
+                <div>Tâches</div>
+                <div>Date d'écheance</div>
+                <div>Priorité</div>
+                <div>Supprimer</div>
+            </div>
+            <div id="liste_donnees"></div>
+        </section>
+        
+        
+    </main>
+    <!--Voici mon footer -->
+    <footer>
+
+    </footer>
+</body>
+<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</html>
