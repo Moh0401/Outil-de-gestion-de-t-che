@@ -1,0 +1,243 @@
+:root{
+  --back-color-principal : black;
+--back-color-secondaire:white;
+--back-color-tertiaire:#BEB3B3;
+}
+header{
+  background-color: var(--back-color-principal);
+  padding: 3% 0% 3% 0%;
+}
+h1{
+  font-size: 305%;
+  width: 40%;
+  background-color: transparent;
+ 
+}
+em{
+  color: var(--back-color-tertiaire);
+}
+.section_1{
+  padding: 10% 0% 10% 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.section_2{
+  margin: 5% 5% 5% 5%;
+  border: solid 2px;
+}
+input{
+  border: solid 2px ;
+  border-radius: 30px;
+}
+div input{
+  padding-left: 5%;
+}
+form{
+  background-color: transparent;
+  width: 40%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 10%;
+}
+div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+h2{
+  background-color: var(--back-color-principal);
+  color: var(--back-color-secondaire);
+  display: flex;
+  justify-content: center;
+  padding: 3% 0% 3% 0%;
+  margin: 0%;
+  font-size: 200%;
+}
+button{
+  border: solid 2px;
+  border-radius: 30px;
+}
+.sous_titre{
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color:white;
+  font-size: 150%;
+  padding: 2% 23% 2% 2%;
+}
+.Arrière_plan_animation{
+background-image: url('5xOZ.GIF');
+background-size: cover;
+animation: my-animation 2s linear 1;
+}
+@keyframes my-animation {
+0% {
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
+}
+.boutonTerminer:active{
+  animation: ma-super-animation 2s linear infinite forwards;
+}
+
+@keyframes ma-super-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.terminee{
+  padding: 1%;
+  background-color: var(--back-color-tertiaire);
+  border-radius: 30px;
+}
+
+.boutonSupprimer:active{
+  animation: ma-super-animation 2s linear infinite forwards;
+}
+
+@keyframes ma-super-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer{
+  background-color: black;
+  padding:3%;
+}
+@media screen and (max-width: 768px) {
+  
+:root {
+  --font-size-base: 16px; 
+}
+
+
+* {
+  margin: 0;
+  padding: 0; 
+}
+
+
+header {
+  background-color: var(--back-color-principal);
+  padding: 1rem 0; 
+  display: flex;
+  justify-content: space-between; 
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header button {
+  border-radius: 30px;
+  padding: 1rem; 
+  background-color: var(--back-color-secondaire);
+}
+
+h1 {
+  font-size: calc(1.5rem + 2vw); 
+  width: 100%;
+  padding-left: 5%;
+}
+
+em {
+  color: var(--back-color-tertiaire);
+}
+
+
+.section_1
+ {
+  padding: 2rem 0; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.section_2 {
+  display: flex;
+  flex-direction: column;
+  margin: 5%; 
+  border: 1px solid;
+  padding: 0;
+
+}
+
+
+input {
+  border: 2px solid;
+  border-radius: 10px; 
+  padding: 0.5rem; 
+}
+
+div input {
+  padding-left: 1rem; 
+}
+
+form {
+  width: 100%; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  gap: 1rem; 
+}
+
+div {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 0.5rem; 
+}
+
+
+h2 {
+  background-color: var(--back-color-principal);
+  color: var(--back-color-secondaire);
+  padding: 1rem 0; 
+  font-size: 1.2rem;
+  text-align: center;
+
+}
+
+button {
+  border: 2px solid;
+  border-radius: 10px; 
+  padding: 0.5rem 1rem; }
+
+.sous_titre {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  color: white;
+
+  font-size: 1rem; 
+}
+.avantTerminer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 96%;
+  font-size: 1rem;
+
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  padding: 1rem;
+  text-align: center;}
+}
